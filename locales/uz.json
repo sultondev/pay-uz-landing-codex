@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "PayUz — O‘zbekistondagi barcha to‘lovlar uchun yagona checkout",
+    "description": "PayUz Uzcard, HUMO, Visa, Mastercard, Apple Pay va Google Pay uchun bank darajasidagi xavfsizlik bilan yagona zamonaviy checkout taqdim etadi.",
+    "ogTitle": "PayUz — O‘zbekiston uchun zamonaviy to‘lov infratuzilmasi",
+    "ogDescription": "Yagona API integratsiyasi orqali mahalliy va xalqaro to‘lovlarni bir necha daqiqada qabul qiling."
+  },
+  "nav": {
+    "brand": "PayUz",
+    "products": "Mahsulotlar",
+    "developers": "Dasturchilar",
+    "pricing": "Narxlar",
+    "company": "Kompaniya",
+    "login": "Kirish",
+    "signup": "Ro‘yxatdan o‘tish"
+  },
+  "hero": {
+    "badge": "Endi HUMO va Uzcard bevosita qo‘llab-quvvatlanadi",
+    "titleStart": "Barcha uchun yagona checkout",
+    "titleHighlight": "To‘lovlar",
+    "titleEnd": "O‘zbekistonda",
+    "description": "Mahalliy va xalqaro to‘lovlarni bitta integratsiya orqali qabul qiling. O‘zbekistonning tez o‘sayotgan raqamli bizneslari uchun zamonaviy to‘lov steki.",
+    "primaryCta": "Erta kirish",
+    "secondaryCta": "Demo ko‘rish",
+    "trusted": "500+ mahalliy bizneslar bizga ishonadi"
+  },
+  "paymentCard": {
+    "file": "checkout.ts",
+    "snippet": "payment.create({ amount: 1250000, currency: 'UZS' })",
+    "total": "Jami to‘lov",
+    "cardInformation": "Karta ma'lumotlari",
+    "payButton": "To‘lash {amount} {currency}",
+    "secured": "PayUz tomonidan himoyalangan"
+  },
+  "logos": {
+    "title": "Eng yaxshilar uchun to‘lovlarni quvvatlaymiz",
+    "visa": "Visa",
+    "mastercard": "Mastercard",
+    "uzcard": "Uzcard",
+    "humo": "HUMO",
+    "applePay": "Apple Pay",
+    "googlePay": "Google Pay"
+  },
+  "features": {
+    "eyebrow": "Imkoniyatlar",
+    "title": "Daromadni oshirish uchun kerak bo‘lgan hamma narsa",
+    "description": "Startapdan enterprise darajasigacha, PayUz sizning to‘lov stekingiz va mahalliy bozor ehtiyojlariga moslashadi.",
+    "unifiedApi": {
+      "title": "Yagona API",
+      "description": "Bitta integratsiya bilan Uzcard, HUMO, Visa va Mastercard ochiladi. Bir marta yarating va ishonch bilan masshtablang."
+    },
+    "mobileFirst": {
+      "title": "Mobile First",
+      "description": "Apple Pay va Google Pay bilan mobil konversiya uchun optimallashtirilgan checkout tajribasi."
+    },
+    "security": {
+      "title": "Bank darajasidagi xavfsizlik",
+      "description": "PCI-ready arxitektura, tokenizatsiya va doimiy fraud monitoring biznesingizni xavfsiz saqlaydi."
+    }
+  },
+  "integration": {
+    "title": "Bir necha oyda emas, bir necha daqiqada to‘lovlarni qabul qilishni boshlang",
+    "step1": {
+      "title": "API kalitlarini oling",
+      "description": "Dasturchi akkauntini yarating va darhol sandbox hamda live kalitlarga ega bo‘ling."
+    },
+    "step2": {
+      "title": "SDK ni ulang",
+      "description": "Nuxt, Node, Python va PHP uchun rasmiy kutubxonalar bilan checkout ni bir necha qatorda ishga tushiring."
+    },
+    "step3": {
+      "title": "Ishga tushiring",
+      "description": "Production rejimini yoqing va Uzcard, HUMO hamda xalqaro kartalarni qabul qilishni boshlang."
+    },
+    "file": "checkout.ts",
+    "code": "import { PayUz } from '@payuz/sdk'\n\nconst client = new PayUz({\n  publicKey: 'pk_live_51M...'\n})\n\nconst checkout = await client.checkout.create({\n  amount: 1_250_000,\n  currency: 'UZS',\n  items: [{ sku: 'pro_plan', quantity: 1 }],\n  successUrl: 'https://yoursite.uz/success',\n  cancelUrl: 'https://yoursite.uz/cancel'\n})\n\nawait checkout.redirect()",
+    "successTitle": "✓ Integratsiya muvaffaqiyatli",
+    "successDescription": "50,000 UZS test to‘lovi qabul qilindi."
+  },
+  "cta": {
+    "title": "To‘lovlaringizni zamonaviylashtirishga tayyormisiz?",
+    "description": "Markaziy Osiyodagi eng tez o‘sayotgan to‘lov tarmog‘iga qo‘shiling. Bir necha daqiqada akkaunt yarating va mahalliy ishonch bilan global ishlang.",
+    "primary": "Bepul akkaunt yaratish",
+    "secondary": "Sotuvlar bilan bog‘lanish"
+  },
+  "footer": {
+    "description": "O‘zbekistondagi har bir biznes uchun to‘lovlarni sodda, xavfsiz va qulay qilamiz.",
+    "product": "Mahsulot",
+    "developers": "Dasturchilar",
+    "company": "Kompaniya",
+    "payments": "To‘lovlar",
+    "checkout": "Checkout",
+    "billing": "Billing",
+    "pricing": "Narxlar",
+    "documentation": "Hujjatlar",
+    "apiReference": "API ma'lumotnomasi",
+    "sdks": "SDKlar",
+    "status": "Holat",
+    "about": "Biz haqimizda",
+    "blog": "Blog",
+    "careers": "Karyera",
+    "contact": "Aloqa",
+    "copyright": "© {year} PayUz Technologies LLC. Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  },
+  "language": {
+    "label": "Til",
+    "en": "EN",
+    "uz": "UZ",
+    "ru": "RU"
+  }
+}

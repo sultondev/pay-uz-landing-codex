@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "PayUz — Единый checkout для всех платежей в Узбекистане",
+    "description": "PayUz предоставляет единый современный checkout для Uzcard, HUMO, Visa, Mastercard, Apple Pay и Google Pay с банковским уровнем безопасности.",
+    "ogTitle": "PayUz — современная платежная инфраструктура для Узбекистана",
+    "ogDescription": "Принимайте локальные и международные платежи за минуты с единой API-интеграцией."
+  },
+  "nav": {
+    "brand": "PayUz",
+    "products": "Продукты",
+    "developers": "Разработчикам",
+    "pricing": "Тарифы",
+    "company": "Компания",
+    "login": "Войти",
+    "signup": "Регистрация"
+  },
+  "hero": {
+    "badge": "Теперь поддерживаются HUMO и Uzcard напрямую",
+    "titleStart": "Один checkout для всех",
+    "titleHighlight": "Платежей",
+    "titleEnd": "в Узбекистане",
+    "description": "Принимайте локальные и международные платежи через одну интеграцию. Современный платежный стек для быстрорастущего цифрового бизнеса Узбекистана.",
+    "primaryCta": "Получить ранний доступ",
+    "secondaryCta": "Смотреть демо",
+    "trusted": "Нам доверяют 500+ локальных компаний"
+  },
+  "paymentCard": {
+    "file": "checkout.ts",
+    "snippet": "payment.create({ amount: 1250000, currency: 'UZS' })",
+    "total": "К оплате",
+    "cardInformation": "Данные карты",
+    "payButton": "Оплатить {amount} {currency}",
+    "secured": "Защищено PayUz"
+  },
+  "logos": {
+    "title": "Мы обеспечиваем платежи для лучших",
+    "visa": "Visa",
+    "mastercard": "Mastercard",
+    "uzcard": "Uzcard",
+    "humo": "HUMO",
+    "applePay": "Apple Pay",
+    "googlePay": "Google Pay"
+  },
+  "features": {
+    "eyebrow": "Возможности",
+    "title": "Все, что нужно для роста выручки",
+    "description": "От MVP стартапа до enterprise-масштаба — PayUz адаптируется под ваш платежный стек и рынок.",
+    "unifiedApi": {
+      "title": "Единый API",
+      "description": "Одна интеграция открывает Uzcard, HUMO, Visa и Mastercard. Интегрируйте один раз и масштабируйтесь уверенно."
+    },
+    "mobileFirst": {
+      "title": "Mobile First",
+      "description": "Checkout, оптимизированный под мобильную конверсию, с Apple Pay и Google Pay из коробки."
+    },
+    "security": {
+      "title": "Безопасность банковского уровня",
+      "description": "PCI-ready архитектура, токенизация и постоянный antifraud-мониторинг защищают ваш бизнес."
+    }
+  },
+  "integration": {
+    "title": "Начните принимать платежи за минуты, а не месяцы",
+    "step1": {
+      "title": "Получите API-ключи",
+      "description": "Создайте аккаунт разработчика и сразу получите sandbox и боевые ключи."
+    },
+    "step2": {
+      "title": "Интегрируйте SDK",
+      "description": "Используйте официальные библиотеки для Nuxt, Node, Python и PHP — запуск за несколько строк."
+    },
+    "step3": {
+      "title": "Запускайтесь",
+      "description": "Включите production и сразу принимайте Uzcard, HUMO и международные карты."
+    },
+    "file": "checkout.ts",
+    "code": "import { PayUz } from '@payuz/sdk'\n\nconst client = new PayUz({\n  publicKey: 'pk_live_51M...'\n})\n\nconst checkout = await client.checkout.create({\n  amount: 1_250_000,\n  currency: 'UZS',\n  items: [{ sku: 'pro_plan', quantity: 1 }],\n  successUrl: 'https://yoursite.uz/success',\n  cancelUrl: 'https://yoursite.uz/cancel'\n})\n\nawait checkout.redirect()",
+    "successTitle": "✓ Интеграция успешна",
+    "successDescription": "Тестовый платеж 50 000 UZS получен."
+  },
+  "cta": {
+    "title": "Готовы модернизировать ваши платежи?",
+    "description": "Присоединяйтесь к самой быстрорастущей платежной сети Центральной Азии. Создайте аккаунт за минуты и масштабируйтесь уверенно.",
+    "primary": "Создать бесплатный аккаунт",
+    "secondary": "Связаться с продажами"
+  },
+  "footer": {
+    "description": "Мы делаем платежи простыми, безопасными и доступными для каждого бизнеса в Узбекистане.",
+    "product": "Продукт",
+    "developers": "Разработчикам",
+    "company": "Компания",
+    "payments": "Платежи",
+    "checkout": "Checkout",
+    "billing": "Billing",
+    "pricing": "Тарифы",
+    "documentation": "Документация",
+    "apiReference": "API Reference",
+    "sdks": "SDK",
+    "status": "Статус",
+    "about": "О нас",
+    "blog": "Блог",
+    "careers": "Карьера",
+    "contact": "Контакты",
+    "copyright": "© {year} PayUz Technologies LLC. Все права защищены.",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия использования"
+  },
+  "language": {
+    "label": "Язык",
+    "en": "EN",
+    "uz": "UZ",
+    "ru": "RU"
+  }
+}

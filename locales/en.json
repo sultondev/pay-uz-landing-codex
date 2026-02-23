@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "PayUz — One Checkout for All Payments in Uzbekistan",
+    "description": "PayUz provides one modern checkout for Uzcard, HUMO, Visa, Mastercard, Apple Pay, and Google Pay with bank-grade security.",
+    "ogTitle": "PayUz — Modern payment infrastructure for Uzbekistan",
+    "ogDescription": "Accept local and international payments in minutes with a single API integration and beautiful checkout flows."
+  },
+  "nav": {
+    "brand": "PayUz",
+    "products": "Products",
+    "developers": "Developers",
+    "pricing": "Pricing",
+    "company": "Company",
+    "login": "Log in",
+    "signup": "Sign Up"
+  },
+  "hero": {
+    "badge": "Now supporting HUMO & Uzcard direct",
+    "titleStart": "One Checkout for All",
+    "titleHighlight": "Payments",
+    "titleEnd": "in Uzbekistan",
+    "description": "Accept local and international payments with a single integration. The modern payment stack for Uzbekistan's fast-moving digital businesses.",
+    "primaryCta": "Get Early Access",
+    "secondaryCta": "View Demo",
+    "trusted": "Trusted by 500+ local businesses"
+  },
+  "paymentCard": {
+    "file": "checkout.ts",
+    "snippet": "payment.create({ amount: 1250000, currency: 'UZS' })",
+    "total": "Total to pay",
+    "cardInformation": "Card information",
+    "payButton": "Pay {amount} {currency}",
+    "secured": "Secured by PayUz"
+  },
+  "logos": {
+    "title": "Powering payments for the best",
+    "visa": "Visa",
+    "mastercard": "Mastercard",
+    "uzcard": "Uzcard",
+    "humo": "HUMO",
+    "applePay": "Apple Pay",
+    "googlePay": "Google Pay"
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "Everything you need to grow revenue",
+    "description": "From startup MVPs to enterprise scale, PayUz adapts to your payments stack and local market needs.",
+    "unifiedApi": {
+      "title": "Unified API",
+      "description": "One integration unlocks Uzcard, HUMO, Visa, and Mastercard. Build once and scale with confidence."
+    },
+    "mobileFirst": {
+      "title": "Mobile First",
+      "description": "Optimized checkout experiences for mobile conversion with Apple Pay and Google Pay baked in."
+    },
+    "security": {
+      "title": "Bank-Grade Security",
+      "description": "PCI-ready architecture, tokenization, and continuous fraud monitoring to keep your business secure."
+    }
+  },
+  "integration": {
+    "title": "Start accepting payments in minutes, not months",
+    "step1": {
+      "title": "Get your API keys",
+      "description": "Create your developer account and immediately access sandbox and live credentials."
+    },
+    "step2": {
+      "title": "Integrate the SDK",
+      "description": "Use official libraries for Nuxt, Node, Python, and PHP to launch checkout in a few lines."
+    },
+    "step3": {
+      "title": "Go live",
+      "description": "Enable production mode and start accepting Uzcard, HUMO, and international cards."
+    },
+    "file": "checkout.ts",
+    "code": "import { PayUz } from '@payuz/sdk'\n\nconst client = new PayUz({\n  publicKey: 'pk_live_51M...'\n})\n\nconst checkout = await client.checkout.create({\n  amount: 1_250_000,\n  currency: 'UZS',\n  items: [{ sku: 'pro_plan', quantity: 1 }],\n  successUrl: 'https://yoursite.uz/success',\n  cancelUrl: 'https://yoursite.uz/cancel'\n})\n\nawait checkout.redirect()",
+    "successTitle": "✓ Integration successful",
+    "successDescription": "Test payment of 50,000 UZS received."
+  },
+  "cta": {
+    "title": "Ready to modernize your payments?",
+    "description": "Join the fastest growing payment network in Central Asia. Create an account in minutes and start shipping globally with local confidence.",
+    "primary": "Create Free Account",
+    "secondary": "Contact Sales"
+  },
+  "footer": {
+    "description": "Making payments simple, secure, and accessible for every business in Uzbekistan.",
+    "product": "Product",
+    "developers": "Developers",
+    "company": "Company",
+    "payments": "Payments",
+    "checkout": "Checkout",
+    "billing": "Billing",
+    "pricing": "Pricing",
+    "documentation": "Documentation",
+    "apiReference": "API Reference",
+    "sdks": "SDKs",
+    "status": "Status",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "copyright": "© {year} PayUz Technologies LLC. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": {
+    "label": "Language",
+    "en": "EN",
+    "uz": "UZ",
+    "ru": "RU"
+  }
+}
